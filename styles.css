@@ -1,0 +1,629 @@
+* {
+    margin: 0;
+    padding: 0;
+
+}
+
+body {
+    background-color: rgb(194, 180, 180);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.h_logo img {
+    object-fit: contain;
+    height: 40px;
+    margin: 10px;
+}
+
+.header {
+    width: 100%;
+    display: flex;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    justify-content: space-evenly;
+    border-bottom: solid 0.5px rgb(153, 138, 138);
+    background-color: white;
+}
+
+.h_logo {
+    display: flex;
+}
+
+.h_right_logo {
+    display: flex;
+}
+
+
+/* Code Not Working  */
+.dropdown_0 {
+      
+    position: relative;
+    display: inline-block;
+} 
+.dropbtn_0 i{
+    color: gray;
+}
+.dropbtn_0 h3{
+    font-size: 12px;
+    margin-top: 10px;
+    font-weight: 400;
+}
+.dropbtn_0{
+    margin-top: 7px;
+}
+.dropdown-content_0 {
+    display: none;
+    position: absolute;
+    right: 0; 
+    background-color: #f9f9f9;
+    width: 130px;
+    box-shadow: 0px 8px 16px 0px rgba(126, 123, 123, 0.2);
+    z-index: 1;
+  }
+  
+  .dropdown-content_0 a {
+    font-size: small;
+    color: rgb(88, 85, 85);
+    padding: 10px; 
+    text-decoration: none;
+    display: block;
+  }
+.dropdown-content_0 a:hover {
+    background-color: #f1f1f1;
+}
+.dropdown_0:hover .dropdown-content_0 {
+    display: block;
+}
+.dropdown_0:hover .dropbtn_0 {
+    background-color: #b3c0b3;
+}
+.h_search {
+    margin-top: 9px;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    border-radius: 5px;
+    height: 22px;
+    color: gray;
+    background-color: aliceblue;
+}
+
+.h_search input {
+    outline: none;
+    border: none;
+    background: none;
+}
+
+.options {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 20px;
+    color: gray;
+    cursor: pointer;
+}
+
+.options:hover {
+    color: black;
+}
+
+.options h3 {
+    font-size: 12px;
+    margin-top: 10px;
+    font-weight: 400;
+}
+
+.h_right_logo .h_icons {
+    margin-top: 5px;
+    margin-right: 5px;
+    height: 20px;
+    width: 20px;
+}
+
+/* Body */
+.bodie {
+    display: flex;
+    margin-top: 35px;
+    max-width: 1200px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+/* Body left side start */
+.bodie_left {
+    position: sticky;
+    top: 80px;
+    flex: 0.2;
+    border-radius: 8px;
+    text-align: center;
+    height: fit-content;
+}
+
+.upper img {
+    margin-bottom: -25px;
+    width: 100%;
+    height: 70px;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    object-fit: cover;
+}
+
+.upper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: solid 1px rgb(141, 146, 146);
+    border-bottom: 0;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    background-color: whitesmoke;
+    padding-bottom: 10px;
+}
+
+.info_logo {
+    font-size: 100px;
+}
+
+.mid {
+    padding: 10px;
+    margin-bottom: 10px;
+    border: solid 1px gray;
+    background-color: whitesmoke;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+
+}
+
+.connections {
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: solid 0.5px gray;
+}
+
+.connections p {
+    color: gray;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.connection_no {
+    font-weight: bold;
+    color: blue !important;
+}
+
+.upper h4 {
+    font-size: 18px;
+}
+
+.upper h5 {
+    color: gray;
+    font-size: 12px;
+    margin-top: 5px;
+}
+
+.lower {
+    text-align: left;
+    padding: 10px;
+    border: solid 1px gray;
+    background-color: whitesmoke;
+    border-radius: 8px;
+    margin-top: 10px;
+
+}
+
+.recent_items {
+    display: flex;
+    font-size: 12px;
+    color: gray;
+    font-weight: bolder;
+    cursor: pointer;
+    margin-bottom: 5px;
+    padding: 5px;
+    /* border-bottom: solid 0.5px gray;*/
+}
+
+.recent_items_2 {
+    display: flex;
+    font-size: 12px;
+    font-weight: bolder;
+    color: gray;
+    cursor: pointer;
+    margin-bottom: 5px;
+    padding: 5px;
+    /*border-bottom: solid 0.5px gray;*/
+}
+
+.lower h4 {
+    font-size: 14px;
+    margin-top: 5px;
+    color: blue;
+}
+
+.access_tools p {
+    margin-top: 5px;
+    color: gray;
+    font-size: 12px;
+    font-weight: 600;
+    text-align: justify;
+    cursor: pointer;
+
+}
+
+.myitem {
+    cursor: pointer;
+    background-color: whitesmoke;
+    display: flex;
+    justify-content: safe;
+    margin-top: 5px;
+    padding: 5px;
+    align-content: flex-start;
+    /*border-bottom: solid 0.5px gray;*/
+    border-top: solid 0.5px gray;
+
+}
+
+.recent_items:hover {
+    color: black;
+}
+
+.recent_items_2:hover {
+    color: black;
+}
+
+.myitem h4 {
+    font-size: 14px;
+
+}
+
+/* Body Left Side Finished */
+
+/* Body Center Part Start */
+.dailyfeed {
+    flex: 0.6;
+    margin: 0 20px;
+
+}
+
+.dailyfeedbox {
+    background-color: whitesmoke;
+    padding: 10px;
+    padding-bottom: 20px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+
+}
+
+.dailyfeed_input {
+    border: solid 1px gray;
+    border-radius: 32px;
+    display: flex;
+    padding: 10px;
+    color: gray;
+    padding-left: 15px;
+}
+
+.daliyfeed_input form {
+    display: flex;
+    /* width: 100%; */
+}
+
+.dailyfeed_input form input {
+    background-color: whitesmoke;
+    border: none;
+    flex: 1;
+    margin-left: 10px;
+    outline-width: 0;
+    font-weight: 600;
+}
+
+.dailyfeed_input2 {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.input_options {
+    display: flex;
+    cursor: pointer;
+    align-items: center;
+    margin-top: 15px;
+    color: gray;
+    padding: 10px;
+}
+
+.input_options:hover {
+    color: black;
+    background-color: aliceblue;
+    border-radius: 10px;
+}
+
+.input_options h4 {
+    margin-left: 10px;
+}
+
+.dropdown_1 {
+
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown_1 .material-symbols-outlined {
+
+    color: rgb(126, 118, 118);
+}
+
+.dropdown-content_1 {
+    display: none;
+    position: absolute;
+    left: 0;
+    background-color: #f9f9f9;
+    width: 130px;
+    box-shadow: 0px 8px 16px 0px rgba(126, 123, 123, 0.2);
+    z-index: 1;
+}
+
+.dropdown-content_1 a {
+    font-size: small;
+    color: rgb(88, 85, 85);
+    padding: 10px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content_1 a:hover {
+    background-color: #f1f1f1;
+}
+
+.dropdown_1:hover .dropdown-content_1 {
+    display: block;
+}
+
+.dropdown_1:hover .dropbtn_1 {
+    background-color: #b3c0b3;
+}
+
+/* Post 1 starts */
+.post_1 {
+    background-color: whitesmoke;
+    padding: 15px;
+    margin-bottom: 10px;
+    border-radius: 8px;
+}
+
+.post_header_1 {
+    display: flex;
+    margin-bottom: 10px;
+}
+
+.post_info_1 {
+    font-size: 12px;
+    color: gray;
+    padding: 5px;
+}
+
+.post_body_1 img {
+    width: 100%;
+    height: 50%;
+}
+
+.post_options_1 {
+    display: flex;
+    justify-content: stretch;
+}
+
+.post_head_inner {
+    display: flex;
+
+}
+
+/* Post 1 Ends  */
+/* Post 2 starts  */
+.post_2 {
+    background-color: whitesmoke;
+    padding: 15px;
+    margin-bottom: 10px;
+    border-radius: 8px;
+}
+
+.post_header_2 {
+    display: flex;
+    margin-bottom: 10px;
+}
+
+.post_info_2 {
+    font-size: 12px;
+    color: gray;
+    padding: 5px;
+}
+
+.post_body_2 img {
+    width: 100%;
+    height: 50%;
+}
+
+.post_options_2 {
+    display: flex;
+    justify-content: space-evenly;
+
+}
+
+.dropdown_2 {
+
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown_2 .material-symbols-outlined {
+
+    color: rgb(126, 118, 118);
+}
+
+.dropdown-content_2 {
+    display: none;
+    position: absolute;
+    left: 0;
+    background-color: #f9f9f9;
+    width: 130px;
+    box-shadow: 0px 8px 16px 0px rgba(126, 123, 123, 0.2);
+    z-index: 1;
+}
+
+.dropdown-content_2 a {
+    font-size: small;
+    color: rgb(88, 85, 85);
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content_2 a:hover {
+    background-color: #f1f1f1;
+}
+
+.dropdown_2:hover .dropdown-content_2 {
+    display: block;
+}
+
+.dropdown_2:hover .dropbtn_2 {
+    background-color: #b3c0b3;
+}
+
+
+/* Body Center Part Finish */
+/* Body right part start */
+.news {
+    background-color: whitesmoke;
+    display: flex;
+    flex-direction: column;
+    flex: 0.2;
+    padding: 10px;
+    height: fit-content;
+    border-radius: 8px;
+}
+
+.news_one {
+    border: solid 0.5px gray;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+}
+
+.news_two {
+    border: solid 0.5px gray;
+    border-radius: 8px;
+    margin-top: 10px;
+}
+
+.news_three {
+    border: solid 0.5px gray;
+    border-collapse: collapse;
+    border-radius: 8px;
+    margin-top: 10px;
+    padding: 8px;
+}
+
+.news_upper {
+    display: flex;
+    justify-content: space-between;
+    border-top: solid 0.5px gray;
+    border-left: solid 0.5px gray;
+    border-right: solid 0.5px gray;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    background-color: rgb(226, 214, 214);
+
+}
+
+.news_mid {
+    border-bottom: solid 0.5px gray;
+    display: flex;
+    justify-content: space-between;
+}
+
+.news_bottom {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: solid 0.5px gray;
+}
+
+.news p {
+    font-size: 12px;
+    color: gray;
+}
+
+.news h4 {
+    font-size: 14px;
+    font-weight: lighter;
+}
+
+.news h3 {
+    font-size: 15px;
+    background-color: rgb(226, 214, 214);
+}
+
+.news i {
+    background-color: rgb(226, 214, 214);
+    cursor: pointer;
+}
+
+.news i:hover {
+    color: blue;
+    background-color: rgb(129, 164, 196);
+}
+
+.news_three_1 {
+
+    align-items: center;
+    border-bottom: solid 0.5px gray;
+}
+
+.news_three_2 {
+    border-bottom: solid 0.5px gray;
+    margin-bottom: 5px;
+    margin-top: 5px;
+}
+
+.news_three_3 {
+
+    margin-bottom: 5px;
+}
+
+.unilever {
+    border: solid 0.5px gray;
+    border-radius: 10px;
+    margin-bottom: 5px;
+    cursor: pointer;
+}
+
+.unilever:hover {
+    background-color: gray;
+    color: black;
+}
+
+.myntra {
+    border: solid 0.5px gray;
+    border-radius: 10px;
+    margin-bottom: 5px;
+    cursor: pointer;
+}
+
+.myntra:hover {
+    background-color: gray;
+    color: black;
+}
+
+.linkedin {
+    border: solid 0.5px gray;
+    border-radius: 10px;
+    margin-bottom: 5px;
+    cursor: pointer;
+}
+
+.linkedin:hover {
+    background-color: gray;
+    color: black;
+}
+
+/* Body right part finish  */
